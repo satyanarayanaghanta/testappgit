@@ -62,6 +62,7 @@ public class AuditResourceIntTest {
 
     @Before
     public void setup() {
+		System.out.println("satya");
         MockitoAnnotations.initMocks(this);
         AuditEventService auditEventService =
                 new AuditEventService(auditEventRepository, auditEventConverter);
